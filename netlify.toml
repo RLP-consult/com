@@ -1,0 +1,12 @@
+[build]
+  publish = "."   # Тому що index.html у корені
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  # Це головний URL твого сайту
+  buildDir = "."
+  baseUrl = "https://rlp-consult.netlify.app"
+  prettyURLs = true
+  trailingSlash = "remove"

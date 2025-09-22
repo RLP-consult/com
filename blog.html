@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Блог для ФОП | RLP Consult</title>
+  <meta name="description" content="Практичний блог для ФОПів: поради з обліку, податків, звітності, кадрів, РРО/ПРРО, ПДВ, валютних операцій, закриття ФОП. Оновлено у 2025." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Акуратно неймспейсимо, щоб не заважати існуючому дизайну */
+    .blog-wrap { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap: 24px; }
+    .blog-card {
+      position: relative; border-radius: 16px; overflow: hidden; min-height: 360px;
+      background-size: cover; background-position: center; box-shadow: 0 6px 24px rgba(0,0,0,.18);
+      display: flex; align-items: end;
+    }
+    .blog-card::before { content:""; position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.6) 70%); }
+    .blog-content { position: relative; z-index:1; color:#fff; padding: 24px; }
+    .blog-title { margin:0 0 8px; font-size: 22px; line-height: 1.25; }
+    .blog-lead { margin:0; opacity:.95; max-height: 72px; overflow:hidden; }
+    .blog-full { display:none; margin-top: 12px; padding: 16px; border-radius:12px; background: rgba(0,0,0,.35); }
+    .blog-full h4 { margin: 10px 0 6px; }
+    .blog-full ul { padding-left: 18px; margin: 4px 0 10px; }
+    .blog-btn {
+      margin-top: 14px; display:inline-block; border:0; border-radius:10px; cursor:pointer;
+      padding: 10px 16px; background:#ff8c1a; color:#fff; font-weight:600;
+    }
+
+
+.menu {
+  list-style: none;           /* Прибирає точки */
+  display: flex;              /* Встановлює ряд */
+  gap: 20px;                  /* Відстань між кнопками */
+  justify-content: center;   /* Центрує по горизонталі */
+  padding: 0;
+  margin: 20px 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+
+.blog-btn:hover { filter: brightness(1.05); }
+    /* Внутрішні абзаци читабельні на темному фоні */
+    .blog-full p, .blog-full li { color: #f7f7f7; }
+    /* Контрастні посилання в тексті */
+    .blog-full a { color:#ffd27a; text-decoration: underline; }
+  </style>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <!-- Шапка сайту: використовує існуючі стилі з style.css -->
+  <header>
+  <nav>
+    <div class="header-box">
+      <h1>Блог для ФОП</h1>
+     <p>
+  Зібрали головне для підприємців: облік, податки, РРО/ПРРО, валютні операції, кадри, закриття ФОП.  
+  Уникаємо застарілих цифр: радимо перевіряти актуальні значення в офіційних джерелах.
+</p>
+
+<div style="text-align: center; margin-top: 12px;">
+  <a href="https://cabinet.tax.gov.ua/" class="tax-btn" target="_blank" rel="noopener noreferrer">
+  Електронний кабінет платника
+</a>
+</div>
+
+
+    <ul class="menu">
+      <li><a href="index.html">Головна</a></li>
+      <li><a class="active" href="blog.html">Блог</a></li>
+      <li><a href="index.html#contact">Контакти</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main class="blog-wrap">
+    <h1 style="margin-bottom: 18px;"></h1>
+    <p style="margin-bottom: 28px; color:#555; max-width:900px">
+    </p>
+
+    <section class="blog-grid">
+
+      <!-- 1. ЄСВ: хто, коли, як -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?business,documents,desk');">
+        <div class="blog-content">
+          <h2 class="blog-title">ЄСВ для ФОП: обов’язок сплати та типові помилки</h2>
+          <p class="blog-lead">Кому сплачувати ЄСВ, строки, як уникнути пені й штрафів. Що робити під час призупинення діяльності або нульових доходів.</p>
+          <div class="blog-full">
+            <h4>Кому обов’язково сплачувати</h4>
+            <ul>
+              <li>ФОП на будь-якій системі оподаткування (за винятками, визначеними законом — перевіряйте актуальні правила).</li>
+              <li>Навіть за відсутності доходу — внесок за себе, якщо обов’язок не знято.</li>
+            </ul>
+            <h4>Строки та порядок</h4>
+            <ul>
+              <li>Сплата в межах встановлених термінів (перевіряйте у своєму календарі в Е-кабінеті).</li>
+              <li>Краще налаштувати автоплатежі/нагадування в банку.</li>
+            </ul>
+            <h4>Типові помилки</h4>
+            <ul>
+              <li>Оплата не на той рахунок (застарілі реквізити). Завжди звіряйте в Е-кабінеті.</li>
+              <li>Пропуск термінів → пеня/штраф. Ведіть чек-лист платежів.</li>
+              <li>Невірне заповнення призначення платежу.</li>
+            </ul>
+            <p><strong>Порада:</strong> зберігайте платіжки та квитанції, це скорочує час на звірку при можливих питаннях ДПС.</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?business,documents,desk');">
+  <div class="blog-content">
+    <h2 class="blog-title">Бухгалтер для ФОП у 2025: онлайн-супровід без зайвих слів</h2>
+    <p class="blog-lead">RLP Consult — бухгалтерія для ФОП онлайн. Звітність, ЄСВ, ПРРО, валютні операції без тяганини</p>
+
+    <div class="blog-full">
+      <h4>RLP Consult — бухгалтер для ФОП без зайвих слів</h4>
+      <p>Ми працюємо з ФОПами по всій Україні: Київ, Одеса, Львів, Харків, Дніпро, Івано-Франківськ, Луцьк, Ужгород, Вінниця, Житомир, Миколаїв — і повністю онлайн. Наші клієнти отримують:</p>
+      <ul>
+        <li>Своєчасну подачу звітності</li>
+        <li>Реєстрацію ПРРО без тяганини</li>
+        <li>Консультації щодо ЄСВ, ПДФО, валютного обліку</li>
+        <li>Супровід при закритті ФОП</li>
+      </ul>
+
+      <h4>Бухгалтер для ФОП онлайн — як це працює?</h4>
+      <p>Ви надсилаєте документи через Електронний кабінет платника або email. Ми все обробляємо, подаємо звіти, консультуємо. Без поїздок, без черг, без зайвих слів.</p>
+
+      <h4>Чому обирають нас?</h4>
+      <p>RLP Consult — це команда з 10+ років досвіду, сучасні IT-рішення, скляний інтерфейс і підтримка, яка не зникає після першої консультації. Ми не просто ведемо облік — ми супроводжуємо бізнес.</p>
+
+      <h4>Замовити послугу</h4>
+      <p>
+        <a href="index.html#contact" class="neon-btn">Надіслати запит</a>
+        або ознайомитись із сервісом
+        <a href="https://www.monokarta.pp.ua/2024/11/monobank-fop.html" target="_blank">ФОП Монобанк</a> — зручне рішення для реєстрації та звітності.
+      </p>
+    </div>
+
+    <button class="blog-btn" data-toggle>Читати більше</button>
+  </div>
+</article>
+
+
+      <!-- 2. Єдиний податок 2/3 група -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?startup,planning,notes');">
+        <div class="blog-content">
+          <h2 class="blog-title">ЄП 2-га та 3-тя групи: звітність і контроль лімітів</h2>
+          <p class="blog-lead">Що і коли подавати, як не перевищити ліміти, що із реєстрами та первинкою, як працювати з безготівкою.</p>
+          <div class="blog-full">
+            <h4>Звітність</h4>
+            <ul>
+              <li>Декларації — у строки згідно з групою. Здавайте завчасно через Е-кабінет/сервіси (СОТА, M.E.Doc тощо).</li>
+              <li>Зберігайте підтверджуючі документи (рахунки, акти, чеки).</li>
+            </ul>
+            <h4>Ліміти доходів</h4>
+            <p>Контролюйте обіг, щоб не перейти поріг для вашої групи. У разі перевищення — готуйтесь до зміни групи/ставки чи реєстрації ПДВ (див. статтю №7).</p>
+            <h4>Безготівкові розрахунки</h4>
+            <p>Розрахунки через банк прозорі та добре звіряються. Для готівки — див. вимоги щодо РРО/ПРРО (стаття №3).</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+      <!-- 3. РРО/ПРРО -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?pos,retail,store');">
+        <div class="blog-content">
+          <h2 class="blog-title">РРО/ПРРО для ФОП: коли потрібен та як зареєструвати</h2>
+          <p class="blog-lead">Хто зобов’язаний застосовувати РРО/ПРРО, як обрати ПРРО, реєстрація в Е-кабінеті, фіскалізація чеків і зберігання Z-звітів.</p>
+          <div class="blog-full">
+            <h4>Коли потрібен</h4>
+            <p>За певних видів діяльності та при розрахунках готівкою або платіжними картками — РРО/ПРРО обов’язковий. Перевірте актуальний перелік винятків.</p>
+            <h4>Що обрати</h4>
+            <ul>
+              <li><strong>РРО</strong> — класичне касове обладнання.</li>
+              <li><strong>ПРРО</strong> — програмний РРО (ноутбук/смартфон), дешевший у старті.</li>
+            </ul>
+            <h4>Реєстрація та робота</h4>
+            <ul>
+              <li>Реєстрація через Е-кабінет платника (заяви, сертифікати підпису).</li>
+              <li>Фіскалізація чеків, X/Z-звітність, архівування.</li>
+            </ul>
+            <p><strong>Порада:</strong> налаштуйте резервний канал інтернету, щоб уникнути збоїв у пікові години.</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+      <!-- 4. Валютні операції/експорт послуг -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?laptop,international,finance');">
+        <div class="blog-content">
+          <h2 class="blog-title">Експорт послуг ФОП: валютний контроль, договори, звітність</h2>
+          <p class="blog-lead">Як безпечно працювати з іноземними замовниками: інвойси, публічна оферта, банк-еквайринг, підтвердження надходжень.</p>
+          <div class="blog-full">
+            <h4>Договірна база</h4>
+            <ul>
+              <li>Публічна оферта/договір, інвойс з деталями робіт, валютою та строками.</li>
+              <li>Обов’язкові реквізити — дані ФОП, опис послуг, умови оплати.</li>
+            </ul>
+            <h4>Розрахунки</h4>
+            <p>Надходження на рахунок ФОП у валюті, конвертація за правилами банку. Зберігайте SWIFT-повідомлення/виписки.</p>
+            <h4>Податки та облік</h4>
+            <p>Доходи у валюті перераховуються у гривню за офіційним курсом для обліку. Завжди звіряйте курсові правила й вимоги банку.</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+      <!-- 5. Первинка та оферта -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?paperwork,signing,contract');">
+        <div class="blog-content">
+          <h2 class="blog-title">Первинні документи ФОП: оферта, акти, інвойси, чеки</h2>
+          <p class="blog-lead">Що вимагатиме перевірка: як оформити первинку для послуг/товарів, зберігання та електронні підписи.</p>
+          <div class="blog-full">
+            <h4>Обов’язкові документи</h4>
+            <ul>
+              <li>Договір/оферта з істотними умовами.</li>
+              <li>Акти/накладні для підтвердження виконання робіт/передачі товарів.</li>
+              <li>Касові чеки (РРО/ПРРО) або банківські підтвердження безготівки.</li>
+            </ul>
+            <h4>Зберігання</h4>
+            <p>Електронні документи з КЕП визнаються належними. Використовуйте системи архівування і робіть резервні копії.</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+      <!-- 6. Перевірки ДПС -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?audit,review,analysis');">
+        <div class="blog-content">
+          <h2 class="blog-title">Перевірки ФОП у 2025: ризик-орієнтований підхід і що готувати</h2>
+          <p class="blog-lead">Як працює відбір на перевірки, які запити приходять, як готувати відповідь, що дивляться інспектори.</p>
+          <div class="blog-full">
+            <h4>Ризик-фактори</h4>
+            <ul>
+              <li>Несвоєчасна звітність/оплата податків.</li>
+              <li>Неконсистентність даних (банківські обороти vs декларації).</li>
+              <li>Ризикові КВЕДи, робота з підозрілими контрагентами.</li>
+            </ul>
+            <h4>Готовність</h4>
+            <ul>
+              <li>Повний пакет первинки за період.</li>
+              <li>Реєстри операцій, касові документи, виписки банку.</li>
+              <li>Відповідальна особа/контакти бухгалтера.</li>
+            </ul>
+            <p><strong>Порада:</strong> комунікуйте через Е-кабінет, зберігайте всі відправлені/отримані документи з квитанціями.</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+      <!-- 8. Найм працівників -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?team,hr,hiring');">
+        <div class="blog-content">
+          <h2 class="blog-title">ФОП і наймані працівники: оформлення, зарплата, відпустки</h2>
+          <p class="blog-lead">Повідомлення про прийняття, трудовий договір, облік робочого часу, лікарняні, відпустки, зарплатні податки.</p>
+          <div class="blog-full">
+            <h4>Оформлення</h4>
+            <ul>
+              <li>Повідомлення про прийняття до початку роботи.</li>
+              <li>Трудовий договір/наказ, табелювання, посадові інструкції за потреби.</li>
+            </ul>
+            <h4>Нарахування</h4>
+            <ul>
+              <li>Зарплатні податки та внески у встановлені строки.</li>
+              <li>Листки непрацездатності, відпустки — згідно із законодавством.</li>
+            </ul>
+            <p><strong>Порада:</strong> для мінімізації помилок використовуйте спеціалізоване ПЗ з розрахунку зарплати.</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+      <!-- 9. Рахунок ФОП vs особисті витрати -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?banking,card,account');">
+        <div class="blog-content">
+          <h2 class="blog-title">Гроші ФОП і особисті витрати: як не змішувати</h2>
+          <p class="blog-lead">Розділяємо бізнес та приватні кошти: навіщо окремий рахунок, як проводити виплати собі, що показувати банку/ДПС.</p>
+          <div class="blog-full">
+            <h4>Розділення фінансів</h4>
+            <ul>
+              <li>Окремий рахунок ФОП для операцій бізнесу.</li>
+              <li>Трансфери на особисті потреби — з правильним призначенням платежу.</li>
+            </ul>
+            <h4>Контроль і прозорість</h4>
+            <p>Виписки банку мають чітко показувати рух коштів. Це полегшує звірки й питання контролюючих органів.</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+      <!-- 10. КВЕДи -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?codes,folders,office');">
+        <div class="blog-content">
+          <h2 class="blog-title">КВЕДи: вибір, відповідність діяльності та ризики невідповідності</h2>
+          <p class="blog-lead">Як підібрати коректні КВЕДи, коли додавати/змінювати, чому невідповідність — це ризик для договорів і перевірок.</p>
+          <div class="blog-full">
+            <h4>Добір КВЕДів</h4>
+            <ul>
+              <li>Оберіть основний і додаткові, що реально відповідають видам діяльності.</li>
+              <li>Моніторте зміни бізнес-моделі — оновлюйте КВЕДи вчасно.</li>
+            </ul>
+            <h4>Ризики</h4>
+            <p>Неправильний КВЕД може спричинити питання щодо правомірності доходів, пільг або договорів.</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+      <!-- 11. Е-кабінет та сервіси -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?software,cloud,workspace');">
+        <div class="blog-content">
+          <h2 class="blog-title">Е-кабінет платника та облік: як автоматизувати рутину</h2>
+          <p class="blog-lead">Сервіси подання звітів, електронні підписи, шаблони, автоплатежі, планувальники дедлайнів.</p>
+          <div class="blog-full">
+            <h4>Інструменти</h4>
+            <ul>
+              <li>Е-кабінет платника (подача/перегляд звітів, листування, звірки).</li>
+              <li>СОТА/M.E.Doc/інше ПЗ — для масового/регулярного документообігу.</li>
+            </ul>
+            <h4>Автоматизація</h4>
+            <p>Нагадування про дедлайни, автоплатежі у банку, чек-листи обов’язкових дій на місяць/квартал.</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+      <!-- 12. Загальна система для ФОП -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?tax,analysis,documents');">
+        <div class="blog-content">
+          <h2 class="blog-title">ФОП на загальній системі: витрати, книги обліку, авансові платежі</h2>
+          <p class="blog-lead">Що вважається підтвердженою витратою, як вести облік доходів/витрат, як планувати податкове навантаження.</p>
+          <div class="blog-full">
+            <h4>Витрати</h4>
+            <p>До витрат належать документально підтверджені та пов’язані з госпдіяльністю. Збирайте первинку, зберігайте електронні копії.</p>
+            <h4>Планування податків</h4>
+            <p>Квартальний/річний прогноз допомагає уникати касових розривів і мати кошти на платежі вчасно.</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+      <!-- 13. Закриття ФОП -->
+      <article class="blog-card" style="background-image:url('https://source.unsplash.com/1200x800/?closed,door,steps');">
+        <div class="blog-content">
+          <h2 class="blog-title">Як закрити ФОП: послідовність дій і фінальна звітність</h2>
+          <p class="blog-lead">Подання заяви через «Дію»/ЦНАП, остаточні звіти та платежі, звірка з фондами, архів документів.</p>
+          <div class="blog-full">
+            <h4>Кроки</h4>
+            <ul>
+              <li>Подати заяву про припинення.</li>
+              <li>Подати фінальні звіти й закрити платежі.</li>
+              <li>Зробити звірку з ДПС/фондами, отримати довідки за потреби.</li>
+            </ul>
+            <p><strong>Порада:</strong> зробіть чек-лист — це економить час і нерви.</p>
+          </div>
+          <button class="blog-btn" data-toggle>Читати більше</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Футер — як на головній -->
+  <footer>
+    <p>© 2025 RLP Consult. Усі права захищено.</p>
+  </footer>
+
+  <script>
+    // Розгортання «Читати більше»
+    document.querySelectorAll('[data-toggle]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var full = btn.previousElementSibling; // .blog-full
+        if (full && full.classList.contains('blog-full')) {
+          var isOpen = full.style.display === 'block';
+          full.style.display = isOpen ? 'none' : 'block';
+          btn.textContent = isOpen ? 'Читати більше' : 'Згорнути';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

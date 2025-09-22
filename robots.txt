@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /netlify.toml
+Disallow: /README.md
+
+Sitemap: https://rlp-consult.netlify.app/sitemap.xml
